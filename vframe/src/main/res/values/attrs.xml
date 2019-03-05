@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--观察者按钮-->
+    <declare-styleable name="ObserverButton">
+        <!--默认背景-->
+        <attr name="defaultBgColor" format="color|reference" />
+        <attr name="defaultBgResource" format="color|reference" />
+        <!--可以点击的背景-->
+        <attr name="pressBgColor" format="color|reference" />
+        <attr name="pressBgResource" format="color|reference" />
+        <!--默认字体颜色-->
+        <attr name="defaultTextColor" format="color" />
+        <!--可以点击的字体颜色-->
+        <attr name="pressTextColor" format="color" />
+    </declare-styleable>
+
+    <!--************** QMUIRadiusImageView ****************-->
+    <attr name="qmui_border_width" format="dimension"/>
+    <attr name="qmui_border_color" format="color"/>
+    <declare-styleable name="QMUIRadiusImageView">
+        <attr name="qmui_border_width"/>
+        <attr name="qmui_border_color"/>
+        <attr name="qmui_selected_mask_color" format="color"/>
+        <attr name="qmui_selected_border_color" format="color"/>
+        <attr name="qmui_selected_border_width" format="dimension"/>
+        <attr name="qmui_corner_radius" format="dimension"/>
+        <attr name="qmui_is_oval" format="boolean"/>
+        <attr name="qmui_is_circle" format="boolean"/>
+        <attr name="qmui_is_touch_select_mode_enabled" format="boolean"/>
+    </declare-styleable>
+    <attr name="QMUIRadiusImageViewStyle" format="reference"/>
+
+    <declare-styleable name="RatingView">
+        <attr name="starsNum" format="integer" />
+        <attr name="starWidth" format="dimension" />
+        <attr name="starHeight" format="dimension" />
+        <attr name="starDistance" format="dimension" />
+        <attr name="starBackground" format="reference" />
+        <attr name="starDrawBackground" format="reference" />
+        <attr name="isIndicator" format="boolean" />
+        <!--默认星星数(可为小数)，取值范围[0-starNum]-->
+        <attr name="defaultStarNum" format="float" />
+        <!--每颗星星代表的分值-->
+        <attr name="valuePerStar" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MatchImageView">
+        <attr name="is_match" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--启动页广告圆形倒计时控件-->
+    <declare-styleable name="CircleCountDownView">
+        <!-- 默认圆实心的颜色 -->
+        <attr name="default_circle_solide_color" format="color"/>
+        <!-- 默认圆边框的颜色 -->
+        <attr name="default_circle_stroke_color" format="color"/>
+        <!-- 默认圆边框的宽度 -->
+        <attr name="default_circle_stroke_width" format="dimension"/>
+        <!-- 默认圆的半径 -->
+        <attr name="default_circle_radius" format="dimension"/>
+        <!-- 进度条的颜色 -->
+        <attr name="progress_color" format="color"/>
+        <!-- 进度条的宽度 -->
+        <attr name="progress_width" format="dimension"/>
+        <!-- 小圆的实心颜色 -->
+        <attr name="small_circle_solide_color" format="color"/>
+        <!-- 小圆的边框颜色 -->
+        <attr name="small_circle_stroke_color" format="color"/>
+        <!-- 小圆的边框宽度 -->
+        <attr name="small_circle_stroke_width" format="dimension"/>
+        <!-- 小圆的半径 -->
+        <attr name="small_circle_radius" format="dimension"/>
+        <!-- 文字的颜色 -->
+        <attr name="text_color" format="color"/>
+        <!-- 文字的字体大小 -->
+        <attr name="text_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeImageView">
+        <attr name="siv_type" />
+        <attr name="siv_borderColor" />
+        <attr name="siv_borderWidth" />
+        <attr name="siv_rectRoundRadius" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleTextView">
+        <attr name="ct_strokeColor" format="color"/>
+        <attr name="ct_bgColor" format="color"/>
+        <attr name="ct_strokeWidth" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 自定义折叠 TextView -->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="exTv_maxCollapsedLines" format="integer" />
+        <attr name="exTv_animDuration" format="integer" />
+        <attr name="exTv_animAlphaStart" format="float" />
+        <attr name="exTv_expandDrawable" format="reference" />
+        <attr name="exTv_collapseDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- 多状态Layout -->
+    <!-- 默认布局控件id -->
+    <item name="pb_loading" type="id"/>
+    <item name="tv_page_loading" type="id"/>
+
+    <item name="iv_page_empty" type="id"/>
+    <item name="tv_page_empty" type="id"/>
+
+    <item name="iv_page_error" type="id"/>
+    <item name="tv_page_error" type="id"/>
+    <item name="tv_page_error_retry" type="id"/>
+
+
+    <style name="MultiStatusLayout">
+    </style>
+
+    <style name="MultiStatusLayout.Style">
+        <item name="msl_EmptyResId">@layout/layout_mul_default_empty</item>
+        <item name="msl_LoadingResId">@layout/layout_mul_default_loading</item>
+        <item name="msl_ErrorResId">@layout/layout_mul_default_error</item>
+
+        <item name="msl_TextColor">#999999</item>
+        <item name="msl_TextSize">16sp</item>
+
+        <item name="msl_RetryTextColor">#009844</item>
+        <item name="msl_RetryTextSize">16sp</item>
+        <item name="msl_RetryBackground">@drawable/shape_default_retry</item>
+        <item name="msl_RetryText">@string/page_error_retry</item>
+
+        <item name="msl_LoadingColor">#009844</item>
+        <item name="msl_LoadingText">@string/page_loading</item>
+
+        <item name="msl_EmptyImage">@drawable/img_default_empty</item>
+        <item name="msl_EmptyText">@string/page_empty</item>
+
+        <item name="msl_ErrorImage">@drawable/img_default_error</item>
+        <item name="msl_ErrorText">@string/page_error_load</item>
+
+    </style>
+
+    <declare-styleable name="MultiStatusLayout">
+        <!-- 空布局资源id -->
+        <attr name="msl_EmptyResId" format="reference"/>
+        <!-- 加载中布局资源id -->
+        <attr name="msl_LoadingResId" format="reference"/>
+        <!-- 错误布局资源id -->
+        <attr name="msl_ErrorResId" format="reference"/>
+
+        <!-- 空布局图片 -->
+        <attr name="msl_EmptyImage" format="reference"/>
+        <!-- 空布局文本 -->
+        <attr name="msl_EmptyText" format="string"/>
+
+        <!-- 错误布局图片 -->
+        <attr name="msl_ErrorImage" format="reference"/>
+        <!-- 错误布局文本 -->
+        <attr name="msl_ErrorText" format="string"/>
+        <!-- 错误布局重试按钮文本 -->
+        <attr name="msl_RetryText" format="string"/>
+
+        <!-- loading布局加载文本 -->
+        <attr name="msl_LoadingText" format="string"/>
+        <!-- loading布局加载文本颜色 -->
+        <attr name="msl_LoadingColor" format="color"/>
+
+        <!-- 文本颜色 -->
+        <attr name="msl_TextColor" format="color"/>
+        <!-- 文本尺寸 -->
+        <attr name="msl_TextSize" format="dimension"/>
+
+        <!-- 重试文本颜色 -->
+        <attr name="msl_RetryTextColor" format="color"/>
+        <!-- 重试文本尺寸 -->
+        <attr name="msl_RetryTextSize" format="dimension"/>
+        <!-- 重试背景 -->
+        <attr name="msl_RetryBackground" format="reference"/>
+    </declare-styleable>
+
+</resources>

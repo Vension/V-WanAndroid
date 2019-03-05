@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/banner_guide"
+                style="@style/MatchMatch"
+                app:banner_pageChangeDuration="1000"
+                app:banner_pointContainerBackground="@android:color/transparent"
+                app:banner_transitionEffect="defaultEffect"
+                app:banner_pointDrawable="@drawable/selector_banner_point"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_guide_enter"
+                android:layout_width="160dip"
+                android:layout_height="40dip"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/shape_rect_bg_main_radius_20dp"
+                android:elevation="@dimen/dp_6"
+                android:text="立即体验"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

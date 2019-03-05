@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_SwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.vension.frame.views.MultiStatusLayout
+                android:id="@+id/refresh_MultiStatusLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/refresh_RecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </com.vension.frame.views.MultiStatusLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/refresh_fab_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@drawable/ic_arrow_up_white_24dp"
+            app:elevation="6dp"
+            app:fabSize="mini"
+            app:pressedTranslationZ="10dp"
+            app:backgroundTint="@color/colorAppTheme"
+            app:rippleColor="@color/colorAppThemeShallow"
+            app:layout_behavior="com.vension.frame.views.behavior.ScaleDownShowBehavior"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

@@ -1,0 +1,60 @@
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory android:title="@string/basic_setting">
+
+        <android.support.v7.preference.CheckBoxPreference
+                android:defaultValue="false"
+                android:key="switch_noPhotoMode"
+                android:layout="@layout/custom_preference_layout"
+                android:summary="@string/switch_no_photo_mode_summary"
+                android:title="@string/switch_photo_mode" />
+
+        <android.support.v7.preference.CheckBoxPreference
+                android:defaultValue="false"
+                android:key="switch_show_top"
+                android:layout="@layout/custom_preference_layout"
+                android:summary="@string/switch_show_top_summary"
+                android:title="@string/switch_show_top_title" />
+
+
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory android:title="@string/other_setting">
+
+
+        <android.support.v7.preference.CheckBoxPreference
+                android:defaultValue="false"
+                android:key="nav_bar"
+                android:layout="@layout/custom_preference_layout"
+                android:summary="@string/nav_bar_coloration_summary"
+                android:title="@string/nav_bar_coloration" />
+
+        <android.support.v7.preference.Preference
+                android:key="clearCache"
+                android:layout="@layout/custom_preference_layout"
+                android:title="@string/clear_cache" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory android:title="@string/about_settings">
+
+        <android.support.v7.preference.Preference
+                android:key="version"
+                android:layout="@layout/custom_preference_layout"
+                android:title="@string/version" />
+
+        <android.support.v7.preference.Preference
+                android:key="author"
+                android:layout="@layout/custom_preference_layout"
+                android:summary="@string/about_developers"
+                android:title="@string/about_developers_label" />
+
+        <android.support.v7.preference.Preference
+                android:key="copyRight"
+                android:layout="@layout/custom_preference_layout"
+                android:summary="@string/copyright_summary"
+                android:title="@string/copyright" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>
