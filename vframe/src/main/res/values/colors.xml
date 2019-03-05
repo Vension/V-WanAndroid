@@ -2,8 +2,8 @@
 <resources>
 
     <!--主背景色、主字体色-->
-    <color name="colorAppTheme">#DDC99C</color>
-    <color name="colorAppThemeShallow">#32B16C</color>
+    <color name="colorAppTheme">#5E4096</color>
+    <color name="colorAppThemeShallow">#673ab7</color>
     <color name="colorAppLine">#FFF6F7F9</color>
     <color name="colorWindowBackground">#f2f2f2</color>
     <color name="colorNavigationBar">@android:color/white</color>

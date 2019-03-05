@@ -12,7 +12,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:indeterminateTintMode="src_atop"
-            android:indeterminateTint="#009844"/>
+            android:indeterminateTint="@color/colorAppTheme"/>
 
     <android.support.v7.widget.AppCompatTextView
             android:id="@id/tv_page_loading"
@@ -22,7 +22,7 @@
             android:gravity="center"
             android:text="@string/page_loading"
             android:textSize="14sp"
-            android:textColor="#009844"/>
+            android:textColor="@color/colorAppTheme"/>
 
 
 </LinearLayout>

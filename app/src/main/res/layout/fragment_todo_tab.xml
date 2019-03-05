@@ -45,7 +45,7 @@
             android:layout_marginTop="@dimen/dp_10"
             android:layout_marginRight="@dimen/dp_20"
             android:layout_marginBottom="@dimen/dp_20"
-            app:layout_behavior="com.vension.mvpforkotlin.sample.widget.ScrollAwareFAB2Behavior"
+            app:layout_behavior="com.kv.wanandroid.widget.ScrollAwareFAB2Behavior"
             app:menu_animationDelayPerItem="0"
             app:menu_colorNormal="@color/colorAppTheme"
             app:menu_colorPressed="@color/colorAppThemeShallow"
