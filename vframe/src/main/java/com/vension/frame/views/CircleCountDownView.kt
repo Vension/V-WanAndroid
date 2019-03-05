@@ -305,11 +305,13 @@ class CircleCountDownView @JvmOverloads constructor(
     private fun countdownMethod() {
         mCountDownTimer = object : CountDownTimer(countdownTime + 1000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
-                countdownTime -= 1000
-                textDesc = (countdownTime/1000).toString() + "s"
-                Log.e("time",countdownTime.toString() + "")
-                //刷新view
-                invalidate()
+                if(countdownTime > 0){
+                    countdownTime -= 1000
+                    textDesc = (countdownTime/1000).toString() + "s"
+                    Log.e("time",countdownTime.toString() + "")
+                    //刷新view
+                    invalidate()
+                }
             }
 
             override fun onFinish() {

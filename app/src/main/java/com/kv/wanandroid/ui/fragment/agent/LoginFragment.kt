@@ -8,6 +8,7 @@ import com.kv.wanandroid.event.LoginEvent
 import com.kv.wanandroid.mvp.contract.LoginContract
 import com.kv.wanandroid.mvp.model.bean.LoginData
 import com.kv.wanandroid.mvp.presenter.LoginPresenter
+import com.vension.frame.VFrame
 import com.vension.frame.core.mvp.AbsCompatMVPFragment
 import com.vension.frame.ext.showToast
 import com.vension.frame.utils.PreferenceUtil
@@ -35,9 +36,16 @@ class LoginFragment : AbsCompatMVPFragment<LoginContract.View, LoginPresenter>()
         return R.layout.fragment_login
     }
 
+    override fun isToolbarCover(): Boolean {
+        return true
+    }
+
     override fun initToolBar(mCommonTitleBar: CommonTitleBar) {
         super.initToolBar(mCommonTitleBar)
-        mCommonTitleBar.centerTextView.text = "登录"
+        mCommonTitleBar.run {
+            centerTextView.text = "登录"
+            setBackgroundColor(VFrame.getColor(R.color.transparent_00))
+        }
     }
 
     override fun initViewAndData(view: View, savedInstanceState: Bundle?) {
