@@ -11,7 +11,7 @@ import kotlin.properties.Delegates
  * ========================================================
  * @author: Created by Vension on 2018/10/31 17:13.
  * @email:  2506856664@qq.com
- * @desc:   character determines attitude, attitude determines destiny
+ * @desc:
  * ========================================================
  */
 class WanAndroidApplication : CoreApplication() {
