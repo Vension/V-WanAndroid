@@ -2,6 +2,7 @@ package com.kv.wanandroid.ui.activity
 
 import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.drawable.Animatable
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.design.widget.NavigationView
@@ -135,7 +136,7 @@ class MainActivity : AbsCompatMVPActivity<MainContract.View, MainContract.Presen
                     startProxyActivity(AboutFragment::class.java)
                 }
                 R.id.nav_logout -> {
-                     logout()
+                    logout()
                 }
                 R.id.nav_test -> {
                     startProxyActivity(TestFragment::class.java)
@@ -339,6 +340,11 @@ class MainActivity : AbsCompatMVPActivity<MainContract.View, MainContract.Presen
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        //icon 为 Animatable 时点击时开始执行自带动画效果
+        val drawable = item?.icon
+        if (drawable is Animatable) {
+            (drawable as Animatable).start()
+        }
         when (item?.itemId) {
             R.id.action_search -> {
                 startProxyActivity(SearchFragmet::class.java)

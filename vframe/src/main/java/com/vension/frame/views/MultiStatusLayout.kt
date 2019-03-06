@@ -11,6 +11,7 @@ import android.support.annotation.DrawableRes
 import android.support.annotation.LayoutRes
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
+import android.support.v4.widget.ContentLoadingProgressBar
 import android.support.v7.widget.AppCompatImageView
 import android.support.v7.widget.AppCompatTextView
 import android.util.AttributeSet
@@ -19,7 +20,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import android.widget.ProgressBar
 import com.vension.frame.R
 import java.util.*
 
@@ -189,7 +189,7 @@ class MultiStatusLayout @JvmOverloads constructor(
         mLayouts[layoutId] = layout
         when (layoutId) {
             mLoadingLayoutId -> {
-                val pbLoading = layout.findViewById<View>(R.id.pb_loading) as ProgressBar
+                val pbLoading = layout.findViewById<View>(R.id.pb_loading) as ContentLoadingProgressBar
                 val tvLoading = layout.findViewById<View>(R.id.tv_page_loading) as AppCompatTextView
                 pbLoading.apply {
                     indeterminateTintList = ColorStateList.valueOf(mLoadingColor)
@@ -308,7 +308,7 @@ class MultiStatusLayout @JvmOverloads constructor(
     fun setLoadingColor(@ColorInt color : Int) : MultiStatusLayout{
         mLoadingColor = color
         val layout = prepareLayout(mLoadingLayoutId)
-        val pbLoading = layout.findViewById<View>(R.id.pb_loading) as ProgressBar
+        val pbLoading = layout.findViewById<View>(R.id.pb_loading) as ContentLoadingProgressBar
         val tvLoading = layout.findViewById<View>(R.id.tv_page_loading) as AppCompatTextView
         pbLoading.apply {
             indeterminateTintList = ColorStateList.valueOf(mLoadingColor)

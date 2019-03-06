@@ -281,7 +281,7 @@ import org.greenrobot.eventbus.ThreadMode
      * showToolBar()方法必须返回true才有效
      */
     private fun getToolBarResId(): Int {
-        return R.layout.v_layout_default_toolbar
+        return R.layout.layout_default_toolbar
     }
 
     /**

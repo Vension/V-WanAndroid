@@ -23,6 +23,6 @@
             android:gravity="center"
             android:text="@string/page_empty"
             android:textSize="14sp"
-            android:textColor="#cdcdcd"/>
+            android:textColor="#999999"/>
 
 </LinearLayout>

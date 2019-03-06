@@ -17,7 +17,7 @@
 
     <application>
 
-        <!--代理Activity //显示软键盘,并让布局压缩 -->
+        <!--代理Activity 显示软键盘,并让布局压缩 -->
         <activity
                 android:name=".core.ProxyActivity"
                 android:configChanges="orientation|screenSize|keyboardHidden"
