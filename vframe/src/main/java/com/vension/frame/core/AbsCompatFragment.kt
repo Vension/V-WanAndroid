@@ -228,7 +228,7 @@ abstract class AbsCompatFragment : Fragment(), IFragment,View.OnClickListener {
     }
 
     open fun getToolBarResId(layout : Int): Int {
-        return if (layout > 0) layout else R.layout.v_layout_default_toolbar
+        return if (layout > 0) layout else R.layout.layout_default_toolbar
     }
 
 
